@@ -12,4 +12,5 @@ birth_date = datetime.datetime(year, month, day)
 day_of_week = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"]
 print("당신은 {}에 태어났습니다.".format(day_of_week[birth_date.weekday()]))
 
+
 # end of file
