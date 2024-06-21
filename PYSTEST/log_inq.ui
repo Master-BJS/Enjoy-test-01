@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LOG 조회</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>FILE NAME:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="openButton">
+        <property name="text">
+         <string>OPEN</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="requestReadCountLabel">
+        <property name="text">
+         <string>Request Read Count</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="spinBox">
+        <property name="value">
+         <number>50</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="breakButton">
+        <property name="text">
+         <string>BREAK</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="mainTable">
+      <column>
+       <property name="text">
+        <string>항목명</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="sideTable">
+      <column>
+       <property name="text">
+        <string>선택</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>값</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="bottomLayout">
+      <item>
+       <widget class="QLabel" name="structureLengthLabel">
+        <property name="text">
+         <string>구조체 길이</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="expertLengthLabel">
+        <property name="text">
+         <string>전문 길이</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="surplusLengthLabel">
+        <property name="text">
+         <string>초과한 길이</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuLOG_정의_불러오기">
+    <property name="title">
+     <string>LOG_정의_불러오기</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuFILE">
+    <property name="title">
+     <string>FILE</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuKEY_OPTION">
+    <property name="title">
+     <string>KEY OPTION</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuREAD">
+    <property name="title">
+     <string>READ</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuFILTER">
+    <property name="title">
+     <string>FILTER</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_">
+    <property name="title">
+     <string>전문.송수신</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>보기</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuCLEAR">
+    <property name="title">
+     <string>CLEAR</string>
+    </property>
+   </widget>
+   <addaction name="menuLOG_정의_불러오기"/>
+   <addaction name="menuFILE"/>
+   <addaction name="menuKEY_OPTION"/>
+   <addaction name="menuREAD"/>
+   <addaction name="menuFILTER"/>
+   <addaction name="menu_"/>
+   <addaction name="menu_2"/>
+   <addaction name="menuCLEAR"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

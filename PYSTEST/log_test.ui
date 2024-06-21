@@ -96,7 +96,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>BREAK</string>
+     <string>READ</string>
     </property>
    </widget>
    <widget class="Line" name="line_2">
@@ -120,19 +120,6 @@
       <width>256</width>
       <height>441</height>
      </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>70</y>
-      <width>113</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>LOG STRUCT</string>
     </property>
    </widget>
    <widget class="QScrollBar" name="horizontalScrollBar">
@@ -164,7 +151,7 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>300</x>
+      <x>10</x>
       <y>70</y>
       <width>91</width>
       <height>21</height>
@@ -210,6 +197,32 @@
      <enum>Qt::Orientation::Vertical</enum>
     </property>
    </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>70</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LOG DATA</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>20</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BREAK</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -217,7 +230,7 @@
      <x>0</x>
      <y>0</y>
      <width>832</width>
-     <height>33</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuLOG">
